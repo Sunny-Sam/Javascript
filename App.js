@@ -1,28 +1,24 @@
-// Assignment 1: Array Operations
+// Assignment 2: Object Operations
+// Objective: Practice adding, removing, and updating values in objects.
 
-// 1. Create an empty array called "fruits".
-let fruits = [];
+// 1. Create an empty object called "person".
 
-// 2. Add the following fruits to the "fruits" array: "apple", "banana", "orange".
+// 2. Add the following properties to the "person" object:
+//    - name: "John"
+//    - age: 30
+//    - city: "New York"
 
-fruits.push("apple", "banana", "orange");
-console.log(fruits);
+// 3. Remove the "age" property from the "person" object.
 
-// 3. Remove the first fruit from the array.
+// 4. Add a new property called "job" with the value "Engineer" to the "person" object.
 
-fruits.shift();
+// 5. Update the "city" property of the "person" object to "San Francisco".
 
-// 4. Add "grape" to the end of the array.
+// 6. Print the final "person" object after performing the above operations.
 
-fruits.push("grape");
-
-// 5. Update the second fruit in the array to "pear".
-console.log(fruits);
-
-// 5. Update the second fruit in the array to "pear".
-
-fruits.splice(1, 1, "pear");
-
-// 6. Print the final "fruits" array after performing the above operations.
-
-console.log(fruits);
+let person = {};
+person.name = { name: "John", age: 30, city: "New York" };
+delete person.name.age;
+person.job = "Engineer";
+person.name.city = "San Francisco";
+console.log(person);
